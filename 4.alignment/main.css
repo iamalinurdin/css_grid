@@ -1,0 +1,39 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ddd;
+  text-align: center;
+  color: white;
+}
+
+.container {
+  background-color: yellow;
+  margin: 50px auto;
+  width: 80%;
+  display: grid;
+  gap: 5px;
+  grid-template-rows: repeat(2, 130px);
+  grid-template-columns: repeat(3, 1fr);
+  /* justify-items: center; */
+  /* align-items: center; */
+  /* place-items: center end; */
+  /* justify-content: space-between; */
+  /* align-content: end; */
+  place-content: center start;
+}
+
+.item {
+  background-color: green;
+  height: 50px;
+  border: 3px solid orange;
+}
+
+.item:nth-child(even) {
+  background-color: black;
+  width: 30px;
+}
+
+.item:nth-child(odd) {
+  width: 50px;
+}

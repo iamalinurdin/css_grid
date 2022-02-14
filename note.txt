@@ -1,0 +1,8 @@
+# Terminologi CSS Grid
+- container: elemen pembungkus grid
+- item: isi dari container
+- line: garis horizontal atau vertikal yang memisahkan grid menjadi beberapa bagian dan ditandai dengan angka 
+- cell: potongan antara baris dan kolom didalam grid
+- area: kumpulan lebih dari satu grid cell yang membentuk kotak
+- track: ukuran antar 2 grid line, bisa horizontal maupun vertikal
+- gap: jarak antara cell

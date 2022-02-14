@@ -1,0 +1,33 @@
+@media (max-width: 1024px) {
+  .menu {
+    order: inherit;
+    grid-template-columns: 1fr;
+  }
+
+  .menu > .brand {
+    display: none;
+  }
+
+  .hero > * {
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+
+  .hero {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 500px) {
+  
+}

@@ -1,0 +1,15 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ddd;
+  text-align: center;
+  color: white;
+}
+
+.container {
+  background-color: yellow;
+  margin: 50px auto;
+  width: 80%;
+  display: grid;
+}
