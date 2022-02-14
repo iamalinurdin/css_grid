@@ -25,9 +25,42 @@
 }
 
 @media (max-width: 768px) {
-  
+  .menu { 
+    order: -1;
+    justify-items: end;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .menu > ul {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 1;
+    height: 100vh;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    transform: translateY(-100%);
+    transition: all 1s;
+  }
+
+  .menu > ul.slide {
+    transform: translateY(0);
+  }
 }
 
-@media (max-width: 500px) {
-  
+@media (max-width: 600px) {
+  body, html {
+    margin: 15px;
+  }
+
+  .header {
+    grid-template-areas: 'hero' 'feature-1' 'feature-2';
+  }
 }

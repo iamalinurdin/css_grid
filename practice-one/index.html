@@ -27,6 +27,12 @@
     </header>
 
     <nav class="menu">
+      <div class="menu-toggle">
+        <input type="checkbox">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <div class="brand">
         <h1>CSS Grid</h1>
       </div>
@@ -37,6 +43,52 @@
         <li><a href="">Gallery</a></li>
       </ul>
     </nav>
+
+    <section class="services">
+      <div class="service">
+        <div class="icon">🥲</div>
+        <h3>Service 1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum magnam molestiae eligendi sequi voluptatem suscipit!</p>
+      </div>
+      <div class="service">
+        <div class="icon">🥲</div>
+        <h3>Service 2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum magnam molestiae eligendi sequi voluptatem suscipit!</p>
+      </div>
+      <div class="service">
+        <div class="icon">🥲</div>
+        <h3>Service 3</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum magnam molestiae eligendi sequi voluptatem suscipit!</p>
+      </div>
+      <div class="service">
+        <div class="icon">🥲</div>
+        <h3>Service 4</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum magnam molestiae eligendi sequi voluptatem suscipit!</p>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <h2>Gallery</h2>
+      <img src="https://picsum.photos/200/201" alt="">
+      <img src="https://picsum.photos/200/202" alt="">
+      <img src="https://picsum.photos/200/203" alt="">
+      <img src="https://picsum.photos/200/204" alt="">
+      <img src="https://picsum.photos/200/205" alt="">
+      <img src="https://picsum.photos/200/206" alt="">
+      <img src="https://picsum.photos/200/207" alt="">
+      <img src="https://picsum.photos/200/208" alt="">
+      <img src="https://picsum.photos/200/209" alt="">
+      <img src="https://picsum.photos/200/210" alt="">
+    </section>
   </div>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle input')
+    const nav = document.querySelector('nav ul')
+
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('slide')
+    })
+  </script>
 </body>
 </html>
